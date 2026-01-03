@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="portfolio.png"
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="profile">
+                <a href="#" class="avatar-link">
+                    <div class="avatar">
+                        <img src="avatar.jpg" alt="Angel Mabael Bitangcol">
+                    </div>
+                </a>
+                <div class="info">
+                    <div class="name-verified">
+                        <h1>Angel Mabael Bitangcol</h1>
+                        <a href="#" class="verified-badge" title="Verified">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#1DA1F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#1DA1F2"/>
+                                <path d="M9 12L11 14L15 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="location">📍 Central Luzon, Philippines</p>
+                    <p class="course">🎓 BSIT Student / Aspiring Web, Iot Developer </p>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="btn" onclick="downloadResume()">Resume</button>
+                <button class="btn btn-outline" onclick="sendEmail()">Email</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- About Section -->
+            <section class="card">
+                <div class="card-header">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2>About</h2>
+                </div>
+                <p>I am a versatile IT Professional and Aspiring Developer with a unique blend of experience in systems infrastructure and software development. My background includes a strong foundation in hardware diagnostics, software troubleshooting, and basic networking, ensuring that I can manage the physical and logical layers of technology. On the development side, I leverage my knowledge of HTML, CSS, and JavaScript to build responsive interfaces, while utilizing Python, Java, and Node.js to create efficient backend logic. This dual perspective allows me to approach technical challenges with a deep understanding of how code interacts with hardware and networks, making me a highly adaptable problem solver capable of supporting a project from the server rack to the user interface.</p>
+            </section>
+
+            <!-- Two Column Layout -->
+            <div class="grid">
+                <section class="card">
+                    <div class="card-header">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 7H20M4 7C2.89543 7 2 6.10457 2 5C2 3.89543 2.89543 3 4 3H20C21.1046 3 22 3.89543 22 5C22 6.10457 21.1046 7 20 7M4 7L4 19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V7M9 11H15M9 15H15" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2>Tech Stack</h2>
+                    </div>
+                    <ul class="list">
+                        <h3>FRONTEND</h3>
+                        <li>JavaScript HTML5 CSS3</li>
+                        <h3>BACKEND</h3>
+                        <li>Node.js</li>
+                        <h3>DATABASE</h3>
+                        <li>SQL</li>
+                        <h3>FOUNDATIONAL SKILLS</h3>
+                        <li>Python</li>
+                        <h3>TOOLS AND FRAMEWORKS</h3>
+                        <li>GitHub Figma VSCode NetBeans</li>
+                    </ul>
+                </section>
+
+                <section class="card span-row">
+                    <div class="card-header">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2>Experience</h2>
+                    </div>
+                    <div class="timeline">
+                        <div class="experience-item">
+                            <div class="timeline-dot"></div>
+                            <div class="experience-content">
+                                <h3>Tech Stack & programming Experience</h3>
+                                <p class="company">Self Learning (2024-Present)</p>
+                                <p>AI-API integration, Node.js, SQDB</p>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <div class="timeline-dot"></div>
+                            <div class="experience-content">
+                                <h3>Meduim Developer</h3>
+                                <p class="company">Startup (2025-2026)</p>
+                                <p>Built scalable systems<br>
+                                    Built PawsHome Website <br>
+                                    Built Apartment Management System
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <div class="timeline-dot"></div>
+                            <div class="experience-content">
+                                <h3>Robotics</h3>
+                                <p class="company">Technopreneurship (2024-2025)</p>
+                                <p>Developed home automation system</p>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <div class="timeline-dot"></div>
+                            <div class="experience-content">
+                                <h3>Hello World 👋</h3>
+                                <p class="company">First Year College (2022)</p>
+                                <p>Started learning programming language</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <div class="card-header">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H9L11 6H20C20.5304 6 21.0391 6.21071 21.4142 6.58579C21.7893 6.96086 22 7.46957 22 8V19Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2>Recent Project</h2>
+                    </div>
+                    <h3>Web Portfolio</h3>
+                    <p>Interactive portfolio with chatbot integration.</p>
+                    <h3>Apartment Management System</h3>
+                    <p>System to manage apartment rentals and maintenance.</p>
+                    <h3>PawsHome Website</h3>
+                    <p>Website for pet adoption and care services.</p>
+                </section>
+
+                <section class="card">
+                    <div class="card-header">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14L12 14.01M12 6V10M2 12L3.17 13.12C3.58 13.53 4 14.21 4 14.75V15.75C4 16.44 4.56 17 5.25 17H6.25C6.79 17 7.47 17.42 7.88 17.83L9 19L10.12 17.88C10.53 17.47 11.21 17.05 11.75 17.05H12.25C12.94 17.05 13.5 16.49 13.5 15.8V14.8C13.5 14.26 13.92 13.58 14.33 13.17L15.5 12L14.33 10.83C13.92 10.42 13.5 9.74 13.5 9.2V8.2C13.5 7.51 12.94 6.95 12.25 6.95H11.25C10.71 6.95 10.03 6.53 9.62 6.12L8.5 5L7.38 6.12C6.97 6.53 6.29 6.95 5.75 6.95H4.75C4.06 6.95 3.5 7.51 3.5 8.2V9.2C3.5 9.74 3.08 10.42 2.67 10.83L2 12ZM22 12L20.83 13.12C20.42 13.53 20 14.21 20 14.75V15.75C20 16.44 19.44 17 18.75 17H17.75C17.21 17 16.53 17.42 16.12 17.83L15 19L13.88 17.88C13.47 17.47 12.79 17.05 12.25 17.05" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2>Certification</h2>
+                    </div>
+                    <h3>Tech Support</h3>
+                    <p class="company">DTI CourseHero - 2024-2025</p>
+                    <h3>CCNA 2</h3>
+                    <p class="company">TSU - 2024-2025</p>
+                    <h3>CCNA 1</h3>
+                    <p class="company">TSU - 2024-2025</p>
+                </section>
+            </div>
+
+            <!-- Footer Info -->
+            <div class="grid grid-3">
+                <section class="card">
+                    <div class="card-header">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2>Goals</h2>
+                    </div>
+                    <ul class="list">
+                        <li>Master AI integration</li>
+                        <li>Build impactful products</li>
+                        <li>Continuous learning</li>
+                    </ul>
+                </section>
+
+                <section class="card">
+                    <div class="card-header">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 18H12.01" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2>Social</h2>
+                    </div>
+                    <ul class="list">
+                        <li><a href="https://www.facebook.com/angel.bitangcol.3" target="_blank">Facebook</a></li>
+                        <li><a href="https://github.com/Nokirokai" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.instagram.com/nokiro.kai/" target="_blank">Instagram</a></li>
+                    </ul>
+                </section>
+
+                <section class="card">
+                    <div class="card-header">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2>Contact</h2>
+                    </div>
+                    <ul class="list">
+                        <li>Bitangcolangel@gmail.com</li>
+                        <li>+63 945 332 2496</li>
+                        <li>www.NoAMB.com</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Gallery -->
+            <section class="card">
+                <div class="card-header">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9M15 3H21M21 3V9M21 3L10 14" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2>Gallery</h2>
+                </div>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="img1.jpg" alt="Project 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img2.jpg" alt="Project 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img3.jpg" alt="Project 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img4.jpg" alt="Project 4">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Chatbot -->
+    <button class="chat-toggle" onclick="toggleChat()">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <div class="chatbot" id="chatbot">
+        <div class="chat-header">
+            <div class="chat-profile">
+                <div class="chat-avatar">
+                    <img src="avatar.jpg" alt="Angel Mabael Bitangcol">
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="chat-info">
+                    <h3>Angel Mabael Bitangcol</h3>
+                    <p class="active-status">Active now</p>
+                </div>
+            </div>
+            <button class="close-btn" onclick="toggleChat()">×</button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages"></div>
+
+        <div class="typing" id="typingIndicator">
+            <div class="typing-bubble">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Add this button anywhere in your HTML body, preferably near the top -->
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+    🌙
+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
