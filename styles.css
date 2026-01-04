@@ -501,7 +501,7 @@ body.dark-mode .theme-toggle {
     right: 30px;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #a2a2a2 0%, #404449 100%);
+    background: linear-gradient(135deg, #6d6d6d 0%, #0066cc 100%);
     color: white;
     border: none;
     border-radius: 50%;
@@ -559,7 +559,7 @@ body.dark-mode .theme-toggle {
 /* Chat Header */
 .chat-header {
     padding: 20px;
-    background: linear-gradient(135deg, #95989a 0%, #222325 100%);
+    background: linear-gradient(135deg, #c3c3c3 0%, #222323 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -753,7 +753,7 @@ body.dark-mode .theme-toggle {
 }
 
 .message.user .message-content {
-    background: #464646;
+    background: #65666c;
     color: white;
     border-radius: 18px 18px 4px 18px;
 }
@@ -777,7 +777,7 @@ body.dark-mode .theme-toggle {
     min-height: 28px;
     border-radius: 50%;
     overflow: hidden;
-    background: #36393b;
+    background: #0084ff;
     flex-shrink: 0;
 }
 
@@ -863,7 +863,7 @@ body.dark-mode .theme-toggle {
 .chat-input button {
     width: 40px;
     height: 40px;
-    background: #6e6e6e;
+    background: #8d8e8e;
     color: white;
     border: none;
     border-radius: 50%;
@@ -877,7 +877,7 @@ body.dark-mode .theme-toggle {
 }
 
 .chat-input button:hover {
-    background: #595959;
+    background: #343535;
     transform: scale(1.1);
 }
 
@@ -908,6 +908,7 @@ body.dark-mode .theme-toggle {
 
     .actions {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .grid,
@@ -923,17 +924,135 @@ body.dark-mode .theme-toggle {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Mobile Chatbot - Optimized Size */
     .chatbot {
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-        border-radius: 0;
-        max-height: 100vh;
+        width: calc(100vw - 30px);
+        height: 480px;
+        bottom: 85px;
+        right: 15px;
+        border-radius: 18px;
+        max-width: 360px;
+    }
+
+    .chat-header {
+        padding: 14px 12px;
+        min-height: 65px;
+    }
+
+    .chat-avatar {
+        width: 38px;
+        height: 38px;
+    }
+
+    .chat-info h3 {
+        font-size: 14px;
+    }
+
+    .active-status {
+        font-size: 11px;
+    }
+
+    .close-btn {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        font-size: 20px;
+    }
+
+    .chat-messages {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .message-content {
+        font-size: 13px;
+        padding: 9px 12px;
+        max-width: 78%;
+    }
+
+    .message-avatar {
+        width: 22px;
+        height: 22px;
+        min-width: 22px;
+        min-height: 22px;
+    }
+
+    .chat-input {
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .chat-input input {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .chat-input button {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        font-size: 15px;
     }
 
     .chat-toggle {
-        bottom: 20px;
+        bottom: 15px;
+        right: 15px;
+        width: 54px;
+        height: 54px;
+        font-size: 22px;
+    }
+
+    .theme-toggle {
+        top: 20px;
         right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .typing {
+        padding: 0 12px 10px;
+    }
+
+    .typing-avatar {
+        width: 22px;
+        height: 22px;
+        min-width: 22px;
+        min-height: 22px;
+    }
+
+    .typing-bubble {
+        padding: 9px 12px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .chatbot {
+        width: calc(100vw - 20px);
+        right: 10px;
+        bottom: 80px;
+        height: 450px;
+        max-width: 100%;
+    }
+
+    .chat-toggle {
+        right: 10px;
+        bottom: 10px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .theme-toggle {
+        right: 10px;
+        top: 15px;
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .message-content {
+        max-width: 80%;
+        font-size: 13px;
     }
 }
