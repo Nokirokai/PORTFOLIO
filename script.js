@@ -80,6 +80,12 @@ function getBotResponse(userMessage) {
     if (msg.match(/^(hi|hello|hey|good morning|good afternoon|good evening)/)) {
         return `Hi! 👋 I'm ${portfolioData.name}'s portfolio assistant. I can help you learn about my experience, skills, education, and projects. What would you like to know?`;
     }
+    // Emotional / relationship question (Tagalog)
+    if (msg.match(/bakit (niya|nya) ako ginanon/i)) {
+       return `I'm really sorry you’re feeling that way. 💔  
+Sometimes people hurt others because of their own fears, confusion, or unresolved issues—not because you weren’t enough.  
+What you’re feeling is valid. Do you want to talk about what happened?`;
+}
     
     // Name
     if (msg.includes('name') || msg.includes('who are you')) {
@@ -434,4 +440,5 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
+
 });
