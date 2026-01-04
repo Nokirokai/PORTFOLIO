@@ -94,6 +94,15 @@ body.dark-mode .gallery-item {
     background: #3a3b3c;
 }
 
+/* Dark Mode - Chatbot */
+body.dark-mode .chatbot {
+    background: #242526;
+}
+
+body.dark-mode .chat-header {
+    background: linear-gradient(135deg, #3a3b3c 0%, #18191a 100%);
+}
+
 body.dark-mode .chat-messages {
     background: #18191a;
 }
@@ -111,8 +120,17 @@ body.dark-mode .message.bot .message-content {
     color: #e4e6eb;
 }
 
+body.dark-mode .message.user .message-content {
+    background: #707172;
+    color: white;
+}
+
 body.dark-mode .typing-bubble {
     background: #3a3b3c;
+}
+
+body.dark-mode .typing-bubble span {
+    background: #b0b3b8;
 }
 
 body.dark-mode .chat-input {
@@ -131,6 +149,14 @@ body.dark-mode .chat-input input::placeholder {
 
 body.dark-mode .chat-input input:focus {
     background: #4a4b4c;
+}
+
+body.dark-mode .chat-input button {
+    background: #636a71;
+}
+
+body.dark-mode .chat-input button:hover {
+    background: #87898b;
 }
 
 /* Theme Toggle Button */
@@ -501,7 +527,7 @@ body.dark-mode .theme-toggle {
     right: 30px;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #6d6d6d 0%, #0066cc 100%);
+    background: linear-gradient(135deg, #595e62 0%, #0066cc 100%);
     color: white;
     border: none;
     border-radius: 50%;
@@ -559,7 +585,7 @@ body.dark-mode .theme-toggle {
 /* Chat Header */
 .chat-header {
     padding: 20px;
-    background: linear-gradient(135deg, #c3c3c3 0%, #222323 100%);
+    background: linear-gradient(135deg, #727375 0%, #3a5671 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -753,7 +779,7 @@ body.dark-mode .theme-toggle {
 }
 
 .message.user .message-content {
-    background: #65666c;
+    background: #767879;
     color: white;
     border-radius: 18px 18px 4px 18px;
 }
@@ -863,7 +889,7 @@ body.dark-mode .theme-toggle {
 .chat-input button {
     width: 40px;
     height: 40px;
-    background: #8d8e8e;
+    background: #767b80;
     color: white;
     border: none;
     border-radius: 50%;
@@ -877,7 +903,7 @@ body.dark-mode .theme-toggle {
 }
 
 .chat-input button:hover {
-    background: #343535;
+    background: #393a3b;
     transform: scale(1.1);
 }
 
